@@ -56,7 +56,7 @@ after_script:
 deploy:
   provider: releases
   api_key:
-    secure: wZfruJ+KVDfyOGnJbhE2PiYmcHoSY470hQEumXeQ+pFnv+803xXmKBJ/VmCZtbbbVR0hxuucsgpM7srCn5Emz2PkpiCUKwaXTKZqnk+L3BVHdlP2gY0wZoHKRh5znNeYB24XyANlE5IEUAot7B5vmBj6Yo/F0zirIm8hltjFryqQhSNWyGyzhoE4Mkpp2Xwlqr4SqHhkgHSN/WphLsbmZGWHVSYpJAot4nGHlxwZF0Xw0RIRSmO3wCWCHVQIYI5AOOjZJre9t+WaKHfOqlmvrqgw1y6PzLSAtcApUFJoy7DGNTkpQTTuXpU+MuDoacUyaelMbXxGQm68fxtZx4gtEv3iCWjlRQFkYMqjYpaf5FkgW/a9L2Y+DiW/f1QeJzstyZn3Im6MrL9wPat7V+VhhRTv1+Fnpj1+hqTuKydtOtBVvCAPwDZO0jjXINjkhzEMwLP1toHSkGP6G10G4ZP2CMTtxcCXSvoZpeGroZm6dgNKA/yeLwYzg/TrQBM5152EcKtyOH5Tv5Vs7MHEUKT+cZ249cpLmWH0DSg2Hws9gQk129QAKBzG/36ENLalhrC8uCl5agxFOyfd79SvI8aevrMZgPIYJ2UZELVGD7wplIiMHMhbqXlThRt7gfrnzCBGhP4foCaHG9DtKlqJEDumZNpfCtI/YHYyx6chEtTpgpk=
+    secure: "EtMqWSf7wQ7yRTp2jBqeJIHfVkOOYE4yjDB5BB4gn7Or7ewkTKPcDeUvfdjMsImp8l0cCPVMXQ47UkAn8VNd+xFE9ACMu5bDxhvfAjVXVivahOQ7zDFxVO3xEQSOdqQ1e4/XI1T78j3iJYLMNGSnZK75lypZqjMB+BHkFXy3VRPDuLVrDYELNYqqlVZgnb5YFSFwkjMsCxHhc3OrmF66/cYIJsHFMReBL8Rs4MgjdkUMsFKLKajO6sGaXFcX4Ompq+Zt+ey7rDjOuqIi6kMOQZb/eTtysTy0K4ZI04Aegno1YqGKNQlDIorPuaqV0gzL6oXuIAoz4/EBFiaBTFTxdLVwppkr0LA1tIxweCNp4WLQh3unP15YBdU6Mq5u9iMVDAFqZK018bIWuKSbIMGzAPEx9COjTUQ7oiD6OjZGaPYd4tYVRvW+9bk0f+wFkmAUeXN1xeHnfz4g5gsLY7tqiCVgCcPoK8hqLdM4d7BNMWvNmYFwFleLK5NGEf7vpnc9FWfu9kBvMYnttnqlx6A6jnFV+RzzilngkEqXxKIrWCXKV7ho+7KwZJaF0v1vLKGLgD8rkEZH6daVNbzwich4glrfq5E3PAJxsAczEYXhIQwyRT//ZmogB6axD1qA8Eh3L2XkXyLHrB+/1JtYCIx2kgFCqYynmtEm/qr3ktD1cZg="
   file:
     - "*.hst.gz"
     - "*.fxt.gz"
@@ -64,7 +64,7 @@ deploy:
   skip_cleanup: true
   overwrite: true
   on:
-    repo: FX-Data/FX-Data-XXXYYY-DS
+    repo: FX-Data/FX-Data-GBPCAD-DS
     tags: true
 after_deploy:
 - make clean
